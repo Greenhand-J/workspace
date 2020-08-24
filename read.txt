@@ -1,3 +1,4 @@
 this is my frist day when I used the git newline
 I think the git distributed under the GPL
 git have a mutual index called stage
+git stack changes
