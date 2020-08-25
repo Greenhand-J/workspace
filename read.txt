@@ -15,7 +15,7 @@
   git status    	        -- 查看当前状态
   git diff HEAD-- filename 	--查看工作区和版本库最新版本的区别
 5.版本回退
-  git reset			--hard HEAD^  --返回上个版本  HEAD^代表上个版本
+  git reset--hard HEAD^  	--返回上个版本  HEAD^代表上个版本
   git reset --hard commit_id    --跳转指定的版本
 6.修改
   git checkout -- filename      --撤销在工作区的修改
