@@ -1,4 +1,25 @@
-this is my frist day when I used the git newline
-I think the git distributed under the GPL
-git have a mutual index called stage
-git stack changes
+1.设置机器的名字和email地址
+  git config --global user.name "your name"
+  git config --global user,email "your email"
+2.创建版本库
+  cd /d  ---进入一个空目录
+  mkdir learngit cd learngit---创建一个文件夹并进入
+  git init  ---使得该目录变成git可以管理的仓库
+3.添加
+  git add filename  ---将文件由工作区加载到暂存区
+  git commit -m "discrible"--将文件由暂存区加载到分支
+4.查询
+  git log   （--pretty=oneline单行输出参数）--查看提交的文件日志
+  cat filename  --查看文件内容
+  git reflog    --查看每个版本的版本号
+  git status    -- 查看当前状态
+  git diff HEAD -- filename 查看工作区和版本库最新版本的区别
+5.版本回退
+  git reset --hard HEAD^  --返回上个版本  HEAD^代表上个版本
+  git reset --hard commit_id   --跳转指定的版本
+6.修改
+  git checkout -- filename    -- 撤销在工作区的修改
+  git reset HEAD filename      --将暂存区的修改退回到工作区
+7.删除
+  git rm filename       --删除文件
+
