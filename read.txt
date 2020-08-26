@@ -16,6 +16,7 @@
   git status    	        -- 查看当前状态
   git diff HEAD-- filename 	--查看工作区和版本库最新版本的区别
   git branch                    --查看分支
+  git log  -graph               --查看分支合并图
 5.版本回退
   git reset--hard HEAD^  	--返回上个版本  HEAD^代表上个版本
   git reset --hard commit_id    --跳转指定的版本
@@ -36,4 +37,5 @@
   git checkout <name> / git switch <name>     --切换分支
   git checkout -b <name> / git switch -c <name>  --创建并切换分支
   git merge <name>          --合并某分支到当前分支
+  git merge --no-ff -m"merge wiht no-ff" <name> --禁用fast forward合并
 
