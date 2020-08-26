@@ -1,3 +1,4 @@
+//  restore bug
 1.设置机器的名字和email地址
   git config --global user.name "your name"
   git config --global user,email "your email"
