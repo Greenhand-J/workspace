@@ -93,7 +93,7 @@ git  branch -D <branch-name>  #强行删除未合并的分支
 ### 12.多人协作
 
 ```
-git pull               										 #将最新的提交抓下
-git branch --set-upstream branch-name origin/branch -name    #建立本地分支和远程分支的关联
-git rebase  												 #将没有push的提交历史整理成直线
+git pull               					#将最新的提交抓下
+git branch --set-upstream branch-name origin/branch -name    #建立本地分支和远程分支的密切关联
+git rebase  						    #将没有push的提交历史整理成直线
 ```
