@@ -109,4 +109,7 @@ git tag -d <tagname>    #删除指定的本地标签
 git push origin <tagname> #将标签推送至远程
 git push origin --tags     #一次性推送全部的本地标签至远程
 git push origin :refs/tags/<tagname> #删除远程标签
+git config --global alias.<anothername><old-name>
+```
+
 
