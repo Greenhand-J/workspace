@@ -94,6 +94,19 @@ git  branch -D <branch-name>  #强行删除未合并的分支
 
 ```
 git pull               					#将最新的提交抓下
-git branch --set-upstream branch-name origin/branch -name    #建立本地分支和远程分支的密切关联
+git branch --set-upstream branch-name origin/branch -name    #建立本地分支和远程分支的密切
+关联
 git rebase  						    #将没有push的提交历史整理成直线
 ```
+### 13.标签
+```
+git tag <name>          #给该分支打上标签
+git tag                 #查看标签
+git tag <name> commit-id #该某次提交打上标签
+git show <tagname>        #查看标签信息
+git tag -a <name> -m"explanation" commit-id #创建带有说明的标签
+git tag -d <tagname>    #删除指定的本地标签
+git push origin <tagname> #将标签推送至远程
+git push origin --tags     #一次性推送全部的本地标签至远程
+git push origin :refs/tags/<tagname> #删除远程标签
+
